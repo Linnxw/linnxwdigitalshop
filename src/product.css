@@ -1,0 +1,19 @@
+*{
+  margin:0;
+  box-sizing: border-box;
+}
+.card-container{
+  height: 270px;
+  width:200px;
+  padding: 6px;
+  overflow: hidden;
+  background:#CFD2CF;
+  color:black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:9px;
+  flex-wrap: wrap;
+}
+
+.

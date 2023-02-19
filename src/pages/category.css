@@ -1,0 +1,16 @@
+.buttons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.buttons Button{
+  margin: 5px 6px;
+}
+.c-category{
+  background:#1B2326;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  color:#F5FEFD;
+}

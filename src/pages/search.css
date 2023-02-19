@@ -1,0 +1,14 @@
+.mb-3{
+  margin-top: 20px;
+}
+.list-product{
+  height: 100%;
+  width: 100vw;
+}
+.container-search{
+  background:#1B2326;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  color:#F5FEFD;
+}

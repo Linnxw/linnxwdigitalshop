@@ -1,0 +1,31 @@
+.container-back{
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  color:#F5FEFD;
+}
+.img-back{
+  height: 100%;
+  width: 50px;
+  margin-left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-back img{
+  height: 50%;
+  width: 50%;
+}
+.text-page {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.text-page p{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top:18px;
+}

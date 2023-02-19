@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+}
+.container-px{
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  margin-top:7px;
+}
+.check-p{
+  height: 100%;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check-p .c{
+  height: 20px;
+  display: inline-block;
+}
+.text-p{
+  display:flex ;
+  flex-direction: column;
+}
+.text-p p{
+  color:#10F5CC;
+  font-size: .9em;
+  font-weight: bold;
+}
+.text-p i{
+  color:#10F5CC;
+  font-size: .7em;
+  margin-top: -20px;
+}
+
