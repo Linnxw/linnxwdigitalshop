@@ -11,6 +11,15 @@
   background:#1B2326;
   height: 100vh;
   width: 100vw;
-  overflow: scroll;
+  overflow-y: scroll;
   color:#F5FEFD;
+}
+::-webkit-scrollbar{
+  background: #1B2326;
+  width:2px;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb{
+  background:#10F5CC;
+  
 }

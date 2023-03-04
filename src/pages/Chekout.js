@@ -25,7 +25,7 @@ export default function Chekout(){
   useEffect(()=>{
     getProduct()
    getProductBuy()
-  },[])
+  })
   
   const handlePlus=()=>{
     

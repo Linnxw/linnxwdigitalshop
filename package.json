@@ -2,7 +2,7 @@
   "name": "datasiswa",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://github.com/Linnxw/web-store.git",
+  "homepage":"http://Linnxw.github.io/web-store",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-regular-svg-icons": "^6.3.0",

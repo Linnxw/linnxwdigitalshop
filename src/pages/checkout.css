@@ -30,6 +30,7 @@
   margin: 0 auto;
   height:100%;
   border-radius:9px;
+  object-fit: cover;
 }
 
 .c-input{

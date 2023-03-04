@@ -67,8 +67,18 @@
   width: 320px;
   height:280px;
   margin:0 auto;
-  overflow:scroll;
+  overflow-x:scroll;
   padding: 10px;
+  
+}
+.container-card::-webkit-scrollbar{
+  background: #1B2326;
+  height:2px;
+  border-radius: 2px;
+}
+.container-card::-webkit-scrollbar-thumb{
+  background:#10F5CC;
+  
 }
 .cards{
   width:6000px ;

@@ -1,3 +1,6 @@
+*{
+  overflow: hidden;
+}
 .container-back{
   height: 50px;
   width: 100vw;
