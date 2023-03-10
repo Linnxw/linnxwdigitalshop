@@ -1,4 +1,4 @@
-import {useParams,useNavigate} from "react-router-dom";
+import {useParams,useNavigate,useHistory} from "react-router-dom";
 import Swal from 'sweetalert2'
 import "./checkout.css"
 import MenuBack from "../component/MenuBack.js"
@@ -12,6 +12,7 @@ export default function Chekout(){
   const [buy,setBuy]=useState({})
   const navigate=useNavigate()
  const {chekout}=useParams()
+ const history=useHistory()
   const getProduct=async()=>{
     const req=await fetch(`https://dummyjson.com/products/${chekout}`)
     const pars=await req.json()
@@ -45,7 +46,7 @@ export default function Chekout(){
     
   }
   const handleBack=()=>{
-    navigate("/")
+    history.goBack()
   }
   
   const handleAlertSucces=()=>{
