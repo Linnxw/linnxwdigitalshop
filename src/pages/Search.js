@@ -9,6 +9,7 @@ import "./search.css"
 export default function Search(){
   const [keyword,setKeyword]=useState("")
   const [product,setProduct]=useState([])
+  const [err,setErr]=useState(false)
   const navigate=useNavigate()
   const handleChange=({target})=>{
     setKeyword(target.value)
@@ -19,7 +20,11 @@ export default function Search(){
   const getProduk=async()=>{
     const req=await fetch(`https://dummyjson.com/products/search?q=${keyword}`)
     const pars=await req.json()
+    if(pars.total==0){
+      setErr(true)
+    }else{
     setProduct(pars.products)
+    }
   }
 const handleCheckout=(id)=>{
     navigate(`/${id}`)
@@ -42,7 +47,7 @@ const handleCheckout=(id)=>{
       </InputGroup>
       <div className="list-product">
          {
-     product.map((m)=>{
+    err ? <p>Product tidak ditemukan</p> : product.map((m)=>{
        return <SearchProduct title={m.title} category={m.category} description={m.description} price={m.price} img={m.thumbnail} event={()=>handleCheckout(m.id)}/>
      })
    }
